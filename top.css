@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.tabs{
+  margin: 0;
+  position: absolute;
+}
+
+.nav-items{
+  align-items: center;
+}
+body{
+  font-family: sans-serif;
+}
+
+#nav-bar{
+  float: center;
+  position: center;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar{
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+
+}
