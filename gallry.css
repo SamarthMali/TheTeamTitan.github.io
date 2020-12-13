@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .gheader {
+    text-align: center;
+    padding: 32px;
+  }
+
+
+
+
+
+
+
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .grow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 13px 19px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .gcolumn {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 6px 12px;
+  }
+  
+  .gcolumn img {
+    margin-top: 25px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 1px 7px 19px grey;
+    
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .gcolumn {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .gcolumn {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

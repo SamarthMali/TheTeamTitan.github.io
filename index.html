@@ -1,92 +1,415 @@
-<html>
+<html style="background-color: #f2e0c8;;">
 
 <head>
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="slideshow.css">
+  <title></title>
+  <link rel="stylesheet" href="slideshow.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="info.css">
+  <link rel="stylesheet" href="bg.css">
+  <link rel="stylesheet" href="BAM.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="scrolltop.css">
+  <link rel="stylesheet" href="retuentotop.css">
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Castoro' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700;800&display=swap" rel="stylesheet">
 
 </head>
+<style>
+  div.polaroid {
+    width: 283px;
+    height: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+  }
+
+  div.container {
+    padding: -10px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 25.0%;
+  }
+
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  div.polaroid1 {
+    width: 22.9%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+
+  div.container1 {
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    width: 50%;
+  }
+
+  .image1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  .container1:hover .image {
+    opacity: 0.3;
+  }
+
+  .container1:hover .middle {
+    opacity: 1;
+  }
+
+  .text1 {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+</style>
+
+<style>
+
+
+
+</style>
 
 <body>
-    <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Mesopotemoa Civilization</a>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallary</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resourses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
 
 
+  <div class="hero-image1">
+    <ul>
+      <li><a class="active" href="#home" style="font-family: inherit;" onclick="href='index.html'">HOME</a></li>
+      <li><a href="#gallery" style="font-family: inherit;" onclick="href='gallay1.html'">GALLERY</a></li>
+      <li><a href="#resources" style="font-family: inherit;" onclick="href='resources.html'">BOOK SHOP</a></li>
+      <li><a href="#about" style="font-family: inherit;" onclick="href='artshop.html'">ART SHOP</a></li>
+    </ul>
+    <button class="button button3" style="
+        font-family: inherit;
+        font-family: inherit;
+        border-radius: 33px;
+        border: outset;
+        margin-right: 24px;
+        margin-top: 38px;
+        ">Become A Member</button>
 
-    <div class="slideshow-container">
+    <div class="hero-text">
+      <h1 style="font-size:68px; font-family: 'Spectral SC', serif; color: #f9e1c8;">Mesopotemia <br> Civilization</h1>
+      <p style="    word-spacing: 3px;">Bond Between Two land of Rivers</p>
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img2.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img3.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
-        
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 9000); // Change image every 2 seconds
-            }
-            </script>
-        
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script>
+
+    var modal = document.getElementById('id01');
+
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class=" row">
+      <div class="column-66" style=" font-family: inherit; color: #000000; ">
+
+
+        Mesopotamia is a region of southwest Asia in the Tigris and Euphrates river system that benefitted from
+        the area’s climate and geography to host the beginnings of human civilization. <br><br>Its history is marked by
+        many important inventions that changed the world, including the concept of time, math, the wheel,
+        sailboats, maps and writing. <br><br> Mesopotamia is also defined by a changing succession of ruling bodies from
+        different areas and cities that seized control over a period of thousands of years. </p>
+        <button class="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Mesopotamia'">Read
+          More</button>
+      </div>
+      <div class="column-33">
+        <img src="t1.jpg" width="335" height="471">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="column-33">
+        <img src="t2.jpg " alt="App" width="335" height="471">
+      </div>
+      <div class="column-66" ">
+                <h1 class=" xlarge-font" style="font-family: 'Spectral SC', serif;"><b
+          style="font-family: 'Spectral SC', serif;">Where</b></h1>
+        <h1 class="large-font" style="color:black; font-family: 'Spectral SC', serif;"><b
+            style="font-family: 'Spectral SC', serif;"> Is Mesopotamia?</b></h1>
+        <p><span style="font-size:24px;font-family: inherit;">Mesopotamia </span> is located in the region now known as
+          the Middle
+          East, which includes parts of southwest Asia and lands around the eastern Mediterranean Sea. <br><br>It is
+          part of the Fertile Crescent, an area also known as “Cradle of Civilization” for the number of
+          innovations that arose from the early societies in this region, which are among some of the earliest
+          known human civilizations on earth.</p>
+        <button class="button"
+          onclick="window.location.href='https://www.britannica.com/place/Mesopotamia-historical-region-Asia#:~:text=of%20Mesopotamian%20history-,The%20background,after%20the%20city%20of%20Babylon.'">Read
+          More</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+
+        <h1 class="large-font" style="color:black;"><b style="font-family: 'Spectral SC', serif;">Mesopotamian
+            Civilization</b></h1>
+        Humans first settled in Mesopotamia in the Paleolithic era. By 14,000 B.C., people in the region lived
+        in small settlements with circular houses.
+        <br><br>
+        Five thousand years later, these houses formed farming communities following the domestication of
+        animals and the development of agriculture, most notably irrigation techniques that took advantage of
+        the proximity of the Tigris and Euphrates rivers.
+        <br><br>
+        Agricultural progress was the work of the dominant Ubaid culture, which had absorbed the Halaf culture
+        before it.</p>
+        <button class="button"
+          onclick="window.location.href='https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-mesopotamia/a/mesopotamia-article'">Read
+          More</button>
+      </div>
+      <div class="column-33">
+        <img src="t3.jpg" width="335" height="471">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="column-33">
+        <img src="t4.jpg" alt="App" width="335" height="471">
+      </div>
+      <div class="column-66">
+        <h1 class="xlarge-font"><b style="font-family: 'Spectral SC', serif" ;>Ancient </b></h1>
+        <h1 class="large-font" style="color:black;"><b style="font-family: 'Spectral SC', serif" ;> of Mesopotamia?</b>
+        </h1>
+        <p><span style="font-size:24px">Mesopotamia </span> Mesopotamia mainly modern day Iraq and Kuwait in
+          particular is often referred to as the cradle of civilization because some of the most influential
+          early city states and empires first emerged there although it’s not the only place! Its modern name
+          comes from the Greek for middle mesos and river potamos and literally means a “country between two
+          rivers.” <br><br>
+          <button class="button" onclick="window.location.href='https://www.ancient.eu/Mesopotamia/'">Read More</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+
+        <h1 class="large-font" style="color:black; "><b style="font-family: 'Spectral SC', serif;">Mesopotamian Art</b>
+        </h1>
+        While making art predates civilization in Mesopotamia, the innovations there include creating art on a
+        larger scale, often in the context of their grandiose and complex architecture, and frequently employing
+        metalwork.
+        <br><br>
+        Kneeling bull holding a spouted vessel, Mesopotamia art
+        A Kneeling bull holding a spouted vessel, one of the earliest examples of metalwork in art from
+        Mesopotamia.
+        <br><br>
+        The Metropolitan Museum of Art/Purchase, Joseph Pulitzer Bequest, 1966
+        <br><br>
+        One of the earliest examples of metalwork in art comes from southern Mesopotamia, a silver statuette of
+        a kneeling bull from 3000 B.C. Before this, painted ceramics and limestone were the most common art
+        forms.
+        <br><br>
+        Another metal-based work, a goat standing on its hind legs and leaning on the branches of a tree,
+        featuring gold and copper along with other materials, was found in the Great Death Pit at Ur and dates
+        to 2500 B.C.
+
+        Mesopotamian art often depicted its rulers and the glories of their lives. </p>
+        <button class="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Art_of_Mesopotamia'">Read
+          More</button>
+      </div>
+      <div class="column-33">
+        <img src="t5.jpg" width="335" height="471">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="sor">
+        <img src="book1.jpg" alt="App" width="335" height="471">
+      </div>
+      <div class="column-66">
+        <h1 class="xlarge-font"><b style="font-family: 'Spectral SC', serif;">Source</b></h1>
+        <p><span style="font-size:24px"> </span>
+
+          Babylon: Mesopotamia and the Birth of Civilization <br>
+          <br>
+          Sumerians <br>
+          <br>
+          Mesopotamia: Captivating history <br>
+          <br>
+          Myths from Mesopotamia <br>
+          <br>
+          Mesopotamia The Invantion of the city <br>
+
+        </p>
+        <button class="button"
+          onclick="window.location.href='https://www.britannica.com/place/Babylon-ancient-city-Mesopotamia-Asia'">Read
+          More</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Mesopotemoia <h3 style="color: #bd8d4c;">Civilization</h3>
+      </h3>
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        ·
+        <a href="#">Gallary</a>
+        ·
+        <a href="#">Resources</a>
+        ·
+        <a href="#">contact Us</a>
+
+      </p>
+
+      <p class="footer-company-name">M.civilization © 2020</p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook" style="
+    margin: 7px;
+"></i></a>
+        <a href="#"><i class="fa fa-twitter" style="
+    margin: 7px;
+"></i></a>
+        <a href="#"><i class="fa fa-linkedin" style="
+    margin: 7px;
+"></i></a>
+        <a href="#"><i class="fa fa-github" style="
+    margin: 7px;
+"></i></a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p>Contact Us</p>
+
+      <form action="#" method="post">
+
+        <input type="text" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button class="button">Send</button>
+
+      </form>
+
+    </div>
+
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class='fas fa-chevron-circle-up'
+    style='font-size:48px;color:white'></button>
+  <i></i>
+  <script>
+
+    var mybutton = document.getElementById("myBtn");
+
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+
 
 </body>
 
